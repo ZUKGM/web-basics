@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">სათაურები და პარაგრაფები</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html" class="active">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 8: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+            <section>
+                <p>დროა, ჩვენი პირველი HTML კოდი დავწეროთ! ვებ-გვერდზე ტექსტის დასამატებლად, ძირითადად 
+                ვიყენებთ ორ რამეს: <strong>სათაურებს (Headings)</strong> და <strong>პარაგრაფებს (Paragraphs)</strong>.</p>
+            </section>
+
+            <section>
+                <h3>1. სათაურები (Headings)</h3>
+                <p>HTML-ში გვაქვს 6 დონის სათაური. ყველაზე დიდი და მთავარი არის <code>&lt;h1&gt;</code>, 
+                    ხოლო ყველაზე პატარა — <code>&lt;h6&gt;</code>.</p>
+                
+                <p>აი, როგორ გამოიყურება ისინი კოდში:</p>
+                
+                <div class="code-example">
+                    &lt;h1&gt;ეს არის მთავარი სათაური&lt;/h1&gt;<br>
+                    &lt;h2&gt;ეს არის მეორე დონის სათაური&lt;/h2&gt;<br>
+                    &lt;h3&gt;ეს არის მესამე დონის სათაური&lt;/h3&gt;
+                </div>
+                
+                <p><strong>წესი:</strong> <code>&lt;h1&gt;</code> თითო გვერდზე სასურველია გამოვიყენოთ მხოლოდ ერთხელ, როგორც წიგნის მთავარი სათაური.</p>
+            </section>
+
+            <section>
+                <h3>2. პარაგრაფები (Paragraphs)</h3>
+                <p>როდესაც გვინდა ჩვეულებრივი ტექსტის ან აბზაცის დაწერა, ვიყენებთ <code>&lt;p&gt;</code> 
+                (Paragraph) ტეგს. ეს არის ვებ-გვერდის ყველაზე გავრცელებული ელემენტი.</p>
+                
+                <div class="code-example">
+                    &lt;p&gt;გამარჯობა! მე ვსწავლობ HTML-ს და ეს ჩემი პირველი პარაგრაფია. VS Code ძალიან მაგარი პროგრამაა.&lt;/p&gt;
+                </div>
+            </section>
+
+            <section class="exercises">
+                <h3 class="exercise-title">🎯 პრაქტიკული დავალება</h3>
+                <p>ახლა შენი ჯერია! დროა, ის ცოდნა გამოიყენო, რაც წინა გაკვეთილზე ვისწავლეთ:</p>
+                <ol>
+                    <li>გახსენი შენი VS Code.</li>
+                    <li>შექმენი ახალი ფაილი და დაარქვი <strong>test.html</strong>.</li>
+                    <li>დაწერე ერთი <code>&lt;h1&gt;</code> სათაური (მაგალითად: "ჩემი პირველი საიტი").</li>
+                    <li>მის ქვემოთ დაწერე <code>&lt;p&gt;</code> პარაგრაფი და მომიყევი შენ შესახებ 1-2 წინადადება.</li>
+                    <li>გახსენი ფაილი Live Server-ით და ნახე შენი შედეგი ბრაუზერში!</li>
+                </ol>
+            </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ფერები და სტილი: CSS-ის დაკავშირება</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html" class="active">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 8: (მალე დაემატება)</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+             <section>
+                <p>წინა გაკვეთილში ჩვენ ვისწავლეთ ტექსტის დაწერა HTML-ით. მაგრამ, მოდი პირდაპირ ვთქვათ: მხოლოდ შავი ტექსტი თეთრ ფონზე ცოტა მოსაწყენია.</p>
+                <p>თუ HTML არის სახლის აგურები და კედლები, <strong>CSS არის საღებავი, ავეჯი და დიზაინი</strong>. ამ გაკვეთილში ვისწავლით, როგორ დავაკავშიროთ CSS ფაილი ჩვენს HTML-ს.</p>
+            </section>
+
+            <section>
+                <h3>როგორ დავაკავშიროთ CSS?</h3>
+                <p>ამისათვის ვიყენებთ სპეციალურ <code>&lt;link&gt;</code> ტეგს. ის აუცილებლად უნდა ჩავსვათ <code>&lt;head&gt;</code> ნაწილში (და არა <code>&lt;body&gt;</code>-ში!).</p>
+                
+                <div class="code-example">
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;ჩემი საიტი&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>&lt;link rel="stylesheet" href="style.css"&gt;</strong><br>
+                    &lt;/head&gt;
+                </div>
+                
+                <p>მოდი გავშიფროთ რა წერია აქ:</p>
+                <ul>
+                    <li><strong>rel="stylesheet"</strong>: ვეუბნებით ბრაუზერს, რომ ეს არის სტილების ფაილი (Style Sheet).</li>
+                    <li><strong>href="style.css"</strong>: ვუთითებთ ფაილის სახელს. თუ შენს ფაილს სხვა რამე დაარქვი, აქაც ის სახელი უნდა ჩაწერო.</li>
+                </ul>
+            </section>
+
+            <section style="background-color: #f0f8ff; padding: 20px; border-left: 5px solid #007bff; border-radius: 5px; margin-top: 30px;">
+                <h3 style="margin-top: 0; color: #007bff;">🎯 პრაქტიკული დავალება</h3>
+                <p>დროა, შენს საიტს ფერები დავუმატოთ!</p>
+                <ol>
+                    <li>VS Code-ში, იქ სადაც შენი <strong>test.html</strong> გაქვს, შექმენი ახალი ფაილი და დაარქვი <strong>style.css</strong>.</li>
+                    <li>შენს <strong>test.html</strong> ფაილში, <code>&lt;head&gt;</code> ტეგებს შორის ჩასვი CSS-ის დამაკავშირებელი კოდი (link ტეგი).</li>
+                    <li>გახსენი შენი ახალი <strong>style.css</strong> და შიგნით დაწერე ეს კოდი:<br>
+                    <br><code class="exercise-example">h1 { color: red; }</code><br><br>
+                    </li>
+                    <li>შეინახე ორივე ფაილი (Ctrl+S) და შეამოწმე Live Server-ით. შენი სათაური წითელი გახდება (ფერებს მომავალ გაკვეთილში უფრო დეტალურად ისწავლით).</li>
+                </ol>
+            </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

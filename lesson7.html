@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ტექსტის ზომის შეცვლა</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html" class="active">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 8: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>წინა გაკვეთილში ჩვენ დავაკავშირეთ CSS და ვისწავლეთ ფერის შეცვლა. ახლა ვისწავლოთ, როგორ ვმართოთ ტექსტის ზომა.</p>
+                    <p>CSS-ში ამისთვის ვიყენებთ ბრძანებას <strong>font-size</strong>. ზომის მისათითებლად ყველაზე მარტივი და გავრცელებული ერთეული არის პიქსელი (<strong>px</strong>).</p>
+                    <p>(სხვა ერთეულებს მომავალ გაკვეთილში ისწავლით).</p>
+                </section>
+
+                <section>
+                    <h3>როგორ შევცვალოთ ზომა CSS-ში?</h3>
+                    <p>ჩვენს <strong>style.css</strong> ფაილში შეგვიძლია მივმართოთ კონკრეტულ ტეგს (მაგალითად <code>&lt;p&gt;</code> ან <code>&lt;h1&gt;</code>) და მივუთითოთ სასურველი ზომა:</p>
+                    <div class="code-example">
+                        <pre><code>p {
+font-size: 18px;
+}
+
+h1 {
+font-size: 50px;
+}</code></pre>
+                        </div>
+                
+
+                    <p><strong>ოქროს წესი:</strong> <code>px</code>-სა და ციფრს შორის გამოტოვება (space) არ უნდა იყოს! ყოველთვის წერე <code>20px</code> და არა <code>20 px</code>, წინააღმდეგ შემთხვევაში ბრაუზერი კოდს ვერ წაიკითხავს.</p>
+                </section>
+
+                <section class="exercises">
+                    <h3>🎯 პრაქტიკული დავალება: გავზარდოთ ტექსტი</h3>
+                    <p>დროა, ჩვენი საიტი უფრო კითხვადი გავხადოთ:</p>
+                    <ol>
+                        <li>გახსენი შენი <strong>style.css</strong> ფაილი.</li>
+                        <li>დაწერე CSS კოდი, რომელიც შენს პარაგრაფს (<code>&lt;p&gt;</code>) გაზრდის <strong>24px</strong>-მდე.</li>
+                        <li>შეინახე ფაილი (Ctrl+S) და შეამოწმე Live Server-ით. ტექსტი საგრძნობლად დიდი უნდა გახდეს!</li>
+                        <li><em>დამატებითი ექსპერიმენტი:</em> სცადე სათაურის (<code>&lt;h1&gt;</code>) ზომის შეცვლაც. რა მოხდება, თუ მას <strong>100px</strong>-ს მიანიჭებ?</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

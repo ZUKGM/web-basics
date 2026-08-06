@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">HTML-ის ჩონჩხი</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html" class="active">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 8: (მალე დაემატება)</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>წინა გაკვეთილში ჩვენ დავწერეთ სათაური და პარაგრაფი. მაგრამ რეალურ ვებ-გვერდებს სჭირდებათ სპეციალური სტრუქტურა, ერთგვარი "ჩონჩხი", რომ ბრაუზერმა (მაგ. Chrome-მა) სწორად გაიგოს ჩვენი დაწერილი კოდი.</p>
+                    <p>ყველა პროფესიონალური ვებ-გვერდი მსოფლიოში იყენებს ამ სტანდარტულ სტრუქტურას.</p>
+                </section>
+
+                <section>
+                    <h3>როგორ გამოიყურება HTML სტრუქტურა?</h3>
+                    
+                    <div class="code-example">
+                        <span style="color: #569cd6;">&lt;!DOCTYPE html&gt;</span><br>
+                        <span style="color: #808080;">&lt;html&gt;</span><br>
+                        &nbsp;&nbsp;<span style="color: #808080;">&lt;head&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #569cd6;">&lt;title&gt;</span>ჩემი საიტი<span style="color: #569cd6;">&lt;/title&gt;</span><br>
+                        &nbsp;&nbsp;<span style="color: #808080;">&lt;/head&gt;</span><br>
+                        &nbsp;&nbsp;<span style="color: #808080;">&lt;body&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955;">&lt;!-- აქ იწერება შენი ტექსტები და სურათები --&gt;</span><br>
+                        &nbsp;&nbsp;<span style="color: #808080;">&lt;/body&gt;</span><br>
+                        <span style="color: #808080;">&lt;/html&gt;</span>
+                    </div>
+                    
+                    <p>მოდი გავშიფროთ მთავარი ნაწილები:</p>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code> — ვეუბნებით ბრაუზერს, რომ ვიყენებთ HTML-ის უახლეს ვერსიას.</li>
+                        <li><code>&lt;head&gt;</code> — აქ იწერება ტექნიკური ინფორმაცია. მაგალითად, <code>&lt;title&gt;</code> განსაზღვრავს, რა ეწეროს ბრაუზერის "ტაბზე" (ჩანართზე).</li>
+                        <li><code>&lt;body&gt;</code> — <strong>ყველაზე მთავარი ნაწილი!</strong> ყველაფერი, რასაც მომხმარებელი ეკრანზე ხედავს, აუცილებლად <code>&lt;body&gt;</code> ტეგებს შორის უნდა დაიწეროს.</li>
+                    </ul>
+                </section>
+
+                <section style="background-color: #f0f8ff; padding: 20px; border-left: 5px solid #007bff; border-radius: 5px; margin-top: 30px;">
+                    <h3 style="margin-top: 0; color: #007bff;">🎯 პრაქტიკული დავალება: ჯადოსნური ღილაკი</h3>
+                    <p>ხელით ამდენი კოდის წერა დამღლელია. VS Code-ს აქვს ერთი ჯადოსნური ფუნქცია, რომელიც წამებში გვიწერს ამ ჩონჩხს:</p>
+                    <ol>
+                        <li>გახსენი შენი <strong>test.html</strong> ფაილი და წაშალე შიგნით ყველაფერი (ნუ გეშინია!).</li>
+                        <li>ცარიელ ფაილში დაწერე მხოლოდ ძახილის ნიშანი: <strong>!</strong></li>
+                        <li>დააჭირე კლავიატურაზე <strong>Enter</strong> (ან Tab) ღილაკს.</li>
+                        <li>VS Code ავტომატურად დაგიწერს მთლიან HTML სტრუქტურას!</li>
+                        <li>ახლა იპოვე <code>&lt;body&gt;</code> და <code>&lt;/body&gt;</code> ტეგები და მათ შორის ხელახლა დაწერე შენი <code>&lt;h1&gt;</code> და <code>&lt;p&gt;</code> კოდები.</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
