@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 8: ფერები | HTML კურსი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ფერების სამყარო</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="lesson8.html" class="active">გაკვეთილი 8: ფერები | ნაწილი 1</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 9: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>აქამდე ჩვენი საიტი მხოლოდ შავ-თეთრი იყო. დროა, მას ფერები და სიცოცხლე შევძინოთ! HTML-სა და CSS-ში ფერების დასამატებლად ძირითადად ვიყენებთ ორ თვისებას: <strong>ტექსტის ფერს</strong> და <strong>ფონის ფერს</strong>. 
+                    (ფონის ფერს მომავალ გაკვეთილში ისწავლით)</p>
+                </section>
+
+                <section>
+                    <p>ტექსტის ფერის შესაცვლელად ვიყენებთ თვისებას სახელად <code>color</code>.</p>
+                    <p>გადადით CSS ფაილზე რომელიც გაქვთ დაკავშირებული ამ HTML ფაილთან:</p>
+                    <div class="code-example">
+<pre><code>p {
+  color: blue;   პარაგრაფები ლურჯია!
+}</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>როგორ ვწერთ ფერებს კოდში?</h3>
+                    <p>კომპიუტერს ფერები შეგვიძლია რამდენიმე გზით ავუხსნათ:</p>
+                    <ul>
+                        <li><strong>სიტყვიერად (Names):</strong> ყველაზე მარტივი გზა. მაგალითად: <code>red</code>, <code>blue</code>, <code>black</code>. ბრაუზერი ცნობს 140-მდე ფერის სახელს.</li>
+                        <li><strong>HEX კოდით:</strong> ეს არის 6-ნიშნა კოდი პროფესიონალებისთვის, რომელიც იწყება <code>#</code> ნიშნით. მაგალითად <code>#ff0000</code> არის ზუსტი წითელი ფერი. HEX კოდები საშუალებას გვაძლევს მილიონობით უნიკალური ფერი მივიღოთ!</li>
+                    </ul>
+                    <p>HEX კოდის დამახსოვრება საჭირო არ არის. ამისათვის VS Code დაგეხმარებათ:</p>                    
+                    <ol>
+                        <li>
+                            გადადით CSS ფაილზე და შექმენით სიტყვიერი ფერის კოდი მაგალითად წითელი:
+                            <img src="images/code_of_color.jpg" alt="Color Code Example">
+                        </li>
+                        <li>
+                            შემდეგ გადაუსვით მაუსი წითელ პატარა ოთხკუთხედს და შეგეძლებათ თქვენი შესაფერისი HEX კოდის შექმნა.
+                            <img src="images/manual_HEX_Colors.jpg" alt="Manual HEX Colors">
+                        </li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
