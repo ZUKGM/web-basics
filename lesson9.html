@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 9: კლასები | HTML კურსი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">კლასები</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="lesson8.html">გაკვეთილი 8: ფერები | ნაწილი 1</a></li>
+                    <li><a href="lesson9.html" class="active">გაკვეთილი 9: კლასები (Classes)</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 10: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>წინა გაკვეთილებში ვისწავლეთ ფერების და ზომების შეცვლა. მაგრამ წარმოიდგინე ასეთი სიტუაცია: შენს საიტზე გაქვს 10 პარაგრაფი (<code>&lt;p&gt;</code>), მაგრამ გინდა, რომ მხოლოდ <strong>ერთი</strong> მათგანი იყოს წითელი.</p>
+                    <p>თუ CSS-ში დავწერთ <code>p { color: red; }</code>, ყველა პარაგრაფი გაწითლდება. როგორ მოვიქცეთ? სწორედ აქ შემოდის CSS-ის მთავარი იარაღი: <strong>კლასები (Classes)</strong>.</p>
+                </section>
+
+                <section>
+                    <h3>რა არის კლასი?</h3>
+                    <p>კლასი არის ერთგვარი "სახელი" ან "იარლიყი", რომელსაც ვანიჭებთ კონკრეტულ HTML ელემენტს. ამ სახელის დახმარებით, CSS-ში შეგვიძლია ვიპოვოთ ზუსტად ის ერთი ელემენტი და მხოლოდ მას შევუცვალოთ დიზაინი.</p>
+                </section>
+
+                <section>
+                    <h3>1. როგორ დავამატოთ კლასი HTML-ში?</h3>
+                    <p>კლასის დასამატებლად ვიყენებთ სიტყვა <code>class</code>-ს გახსნილ ტეგში. სახელად შეგიძლია დაარქვა ნებისმიერი რამ (მაგალითად: <em>warning</em>, <em>box</em>, <em>main-title</em>).</p>
+                    
+                    <div class="code-example">
+<pre><code>&lt;p class="warning"&gt;ეს არის მნიშვნელოვანი გაფრთხილება!&lt;/p&gt;
+&lt;p class="success"&gt;ეს არის წარმატებული ოპერაცია!&lt;/p&gt;
+&lt;p&gt;ეს ჩვეულებრივი პარაგრაფია.&lt;/p&gt;</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>2. როგორ ვიპოვოთ კლასი CSS-ში?</h3>
+                    <p>HTML-ში კლასის მინიჭების შემდეგ, გადავდივართ CSS ფაილში. <strong>ყურადღება:</strong> როცა CSS-ში კლასს ვიძახებთ, მის სახელს წინ აუცილებლად უნდა დავუწეროთ <strong>წერტილი (.)</strong>.</p>
+                    
+                    <div class="code-example">
+<pre><code>/* წერტილი ნიშნავს, რომ ვეძებთ კლასს სახელად warning */
+.warning {
+    color: red;
+    background-color: yellow;
+}
+
+.success {
+    color: green;
+}</code></pre>
+                    </div>
+                    <p>ამ კოდის შედეგად, მხოლოდ ის პარაგრაფი გაწითლდება, რომელსაც <code>class="warning"</code> აქვს. ჩვეულებრივი პარაგრაფი კი უცვლელი დარჩება.</p>
+                    <p>თუ გაქვთ სურვილი რომ კლასი იყოს მხოლოდ ერთი ტიპის ელემენტისთვის განკუთვნილი, ვთქვათ: h4-თქვის, მაშინ შეგიძლიათ ჩაწეროთ:</p>
+                    <div class="code-example">
+<pre><code>h4.success {
+    color: green;
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="exercises">
+                    <h3 class="exercise-title">🎯 პრაქტიკული დავალება</h3>
+                    <p>ახლა შენი ჯერია, გამოსცადო კლასები:</p>
+                    <ol>
+                        <li>HTML-ში შექმენი სამი სხვადასხვა <code>&lt;h2&gt;</code> სათაური.</li>
+                        <li>პირველს მიეცი კლასი <code>class="title-one"</code>, მეორეს <code>class="title-two"</code>, მესამე კი დატოვე კლასის გარეშე.</li>
+                        <li>გადადი CSS-ში და <code>.title-one</code> კლასს მიანიჭე ლურჯი ფერი, ხოლო <code>.title-two</code> კლასს — მწვანე.</li>
+                        <li>ნახე შედეგი <strong>Live Server</strong>-ით. შეამჩნევ, რომ მესამე სათაური არ შეიცვალა, რადგან მას კლასი არ ჰქონდა!</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
