@@ -148,3 +148,8 @@ h3.exercise-title {
     padding: 2px 5px; 
     border-radius: 3px;
 }
+ul li code, section.exercises code {
+    background-color: #ddd;
+    padding: 2px 5px;
+    border-radius: 3px;
+}

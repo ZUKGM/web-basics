@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 10: ტექსტის სისქე (Font-Weight) | HTML კურსი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ტექსტის სისქე (Font-Weight)</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="lesson8.html">გაკვეთილი 8: ფერები | ნაწილი 1</a></li>
+                    <li><a href="lesson9.html">გაკვეთილი 9: კლასები (Classes)</a></li>
+                    <li><a href="lesson10.html" class="active">გაკვეთილი 10: ტექსტის სისქე</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 11: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>ტექსტის ზომისა (<code>font-size</code>) და ფერის (<code>color</code>) შეცვლა უკვე კარგად ვიცით. ახლა ვისწავლოთ, როგორ გავხადოთ ტექსტი სქელი და მკვეთრი, ან პირიქით — თხელი და ელეგანტური.</p>
+                    <p>ამისათვის CSS-ში ვიყენებთ თვისებას სახელად <strong><code>font-weight</code></strong>.</p>
+                </section>
+
+                <section>
+                    <h3>1. სტანდარტული მნიშვნელობები</h3>
+                    <p>ყველაზე ხშირად ვიყენებთ ორ ძირითად სიტყვას:</p>
+                    <ul>
+                        <li><strong>bold</strong> — ტექსტს ხდის სქელს (გამუქებულს).</li>
+                        <li><strong>normal</strong> — აბრუნებს ტექსტს ჩვეულებრივ სისქეზე (სტანდარტული).</li>
+                    </ul>
+                    
+                    <div class="code-example">
+<pre><code>.important-text {
+    font-weight: bold;
+    color: red;
+}
+
+.normal-text {
+    font-weight: normal;
+}</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>2. ციფრობრივი მნიშვნელობები</h3>
+                    <p>პროფესიონალურ ვებ-დიზაინში, სიტყვების ნაცვლად ხშირად იყენებენ ციფრებს <strong>100-დან 900-მდე</strong>. ეს საშუალებას გვაძლევს უფრო ზუსტად ვაკონტროლოთ სისქე (თუმცა ეს დამოკიდებულია იმაზე, აქვს თუ არა კონკრეტულ ფონტს ამ სისქეების მხარდაჭერა).</p>
+                    <ul>
+                        <li><code>font-weight: 400;</code> — იგივეა, რაც <strong>normal</strong>.</li>
+                        <li><code>font-weight: 700;</code> — იგივეა, რაც <strong>bold</strong>.</li>
+                        <li><code>font-weight: 900;</code> — ყველაზე სქელი ვარიანტი (Black).</li>
+                    </ul>
+
+                    <div class="code-example">
+<pre><code>.heavy-title {
+    font-weight: 900;
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="exercises">
+                    <h3 class="exercise-title">🎯 პრაქტიკული დავალება</h3>
+                    <p>მოდი გამოვიყენოთ წინა გაკვეთილის (კლასების) ცოდნაც:</p>
+                    <ol>
+                        <li>შექმენი ახალი <code class="exercise-example">&lt;p&gt;</code> პარაგრაფი და მიანიჭე კლასი <code class="exercise-example">class="highlight"</code>.</li>
+                        <li>გადადი CSS ფაილში და დაუწერე ამ კლასს: <code class="exercise-example">font-weight: bold;</code>.</li>
+                        <li>დამატებით, შეცვალე მისი ფერი შენთვის სასურველ ფერად.</li>
+                        <li>შექმენი <code class="exercise-example">&lt;h1&gt;</code> სათაური და სცადე მისი გათხელება <code class="exercise-example">font-weight: normal;</code> გამოყენებით (რადგან სათაურები ავტომატურად სქელია).</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
