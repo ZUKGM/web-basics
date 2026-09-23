@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 11: ფონტის არჩევა (Font-Family) | HTML კურსი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ფონტის არჩევა (Font-Family)</div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="lesson8.html">ფერები | ნაწილი 1</a></li>
+                    <li><a href="lesson9.html">კლასები (Classes)</a></li>
+                    <li><a href="lesson10.html">ტექსტის სისქე</a></li>
+                    <li><a href="lesson11.html" class="active">ფონტის არჩევა</a></li>
+                    <li><a href="lesson12.html">ტექსტის სტილი</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 13: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>აქამდე ვისწავლეთ ტექსტის ზომის, ფერის და სისქის შეცვლა. მაგრამ შეამჩნევდი, რომ ბრაუზერის სტანდარტული შრიფტი ხშირად უბრალოდ ან ძველმოდურად გამოიყურება.</p>
+                    <p>ვებ-გვერდზე შრიფტის (ფონტის) შესაცვლელად CSS-ში ვიყენებთ თვისებას სახელად <strong><code>font-family</code></strong>.</p>
+                </section>
+
+                <section>
+                    <h3>1. როგორ მუშაობს font-family?</h3>
+                    <p><code>font-family</code>-ს მნიშვნელობად ვუწერთ ფონტის სახელს. პროფესიონალურ კოდში თითქმის ყოველთვის მივუთითებთ რამდენიმე ფონტს (მძიმით გამოყოფილს). ამას ჰქვია <strong>Fallback (სათადარიგო) სისტემა</strong>.</p>
+                    
+                    <div class="code-example">
+<pre><code>p {
+    font-family: Arial, Helvetica, sans-serif;
+}</code></pre>
+                    </div>
+                    
+                    <p><strong>როგორ კითხულობს ამას ბრაუზერი?</strong></p>
+                    <ol>
+                        <li>ჯერ სცდის <strong>Arial</strong>-ს.</li>
+                        <li>თუ მომხმარებლის კომპიუტერში Arial დაინსტალირებული არ არის, გადადის მეორეზე — <strong>Helvetica</strong>.</li>
+                        <li>თუ არცერთი არ მოიძებნა, გამოიყენებს სისტემის სტანდარტულ უსერიფო ფონტს — <strong>sans-serif</strong>.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>2. მრავალსიტყვიანი ფონტების სახელები</h3>
+                    <p>თუ ფონტის სახელი შედგება ორი ან მეტი სიტყვისგან (მაგალითად: <em>Segoe UI</em> ან <em>Times New Roman</em>), ის აუცილებლად უნდა ჩავსვათ ბრჭყალებში:</p>
+
+                    <div class="code-example">
+<pre><code>body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+}</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>3. ძირითადი ფონტების ოჯახები</h3>
+                    <ul>
+                        <li><strong>sans-serif:</strong> სუფთა, თანამედროვე შრიფტი (მაგ: Arial, Segoe UI). საუკეთესოა ეკრანზე წასაკითხად.</li>
+                        <li><strong>serif:</strong> კლასიკური შრიფტი (მაგ: Times New Roman, Georgia).</li>
+                        <li><strong>monospace:</strong> ყველა ასოს აქვს ზუსტად თანაბარი სიგანე (მაგ: Courier New). გამოიყენება კოდის საჩვენებლად.</li>
+                    </ul>
+                </section>
+
+                <section class="exercises">
+                    <h3 class="exercise-title">🎯 პრაქტიკული დავალება</h3>
+                    <p>გამოსცადე სხვადასხვა შრიფტი შენს ვებ-გვერდზე:</p>
+                    <ol>
+                        <li>გახსენი შენი <code>style.css</code> ფაილი.</li>
+                        <li><code>body</code> სელექტორს დაუწერე: <code>font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;</code>. ნახე, როგორ შეიცვლება მთლიანი საიტის იერსახე.</li>
+                        <li>შექმენი კლასი <code>.code-block</code> და მიეცი მას <code>font-family: monospace;</code>.</li>
+                        <li>შეამოწმე ცვლილებები Live Server-ით!</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

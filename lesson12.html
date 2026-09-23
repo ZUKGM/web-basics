@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გაკვეთილი 12: ტექსტის სტილი (Font-Style)  | HTML კურსი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-nav">
+        <div class="logo">ტექსტის სტილი (Font-Style) </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>თავები</h3>
+                <ul>
+                    <li><a href="index.html">შესავალი</a></li>
+                    <li><a href="lesson1.html">რა არის HTML & CSS?</a></li>
+                    <li><a href="lesson2.html">მოამზადე შენი სამუშაო გარემო (VS Code)</a></li>
+                    <li><a href="lesson3.html">Web-ის ისტორია</a></li>
+                    <li><a href="lesson4.html">სათაურები და პარაგრაფები</a></li>
+                    <li><a href="lesson5.html">HTML-ის ჩონჩხი</a></li>
+                    <li><a href="lesson6.html">CSS-ის დაკავშირება HTML-ში</a></li>
+                    <li><a href="lesson7.html">ტექსტის ზომის შეცვლა</a></li>
+                    <li><a href="lesson8.html">ფერები | ნაწილი 1</a></li>
+                    <li><a href="lesson9.html">კლასები (Classes)</a></li>
+                    <li><a href="lesson10.html">ტექსტის სისქე</a></li>
+                    <li><a href="lesson11.html">ფონტის არჩევა</a></li>
+                    <li><a href="lesson12.html" class="active">ტექსტის სტილი</a></li>
+                    <li><a href="#" class="disabled">გაკვეთილი 13: (მალე დაემატება)</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <article>
+                <section>
+                    <p>ჩვენ უკვე ვიცით როგორ შევცვალოთ ფონტის ზომა, ფერი, სისქე და თავად შრიფტიც კი. ახლა ვისწავლოთ ტექსტის დახრა.</p>
+                    <p>ამისათვის CSS-ში ვიყენებთ თვისებას სახელად <strong><code>font-style</code></strong>. ის ძირითადად გამოიყენება ციტატების, უცხო სიტყვების, ან მნიშვნელოვანი ფრაზების ვიზუალურად გამოსაყოფად.</p>
+                </section>
+
+                <section>
+                    <h3>ძირითადი მნიშვნელობები</h3>
+                    <p><code>font-style</code>-ს ყველაზე ხშირად ორი მნიშვნელობით ვიყენებთ:</p>
+                    <ul>
+                        <li><strong>italic</strong> — ტექსტს ხრის მარჯვნივ (კურსივი).</li>
+                        <li><strong>normal</strong> — აბრუნებს დახრილ ტექსტს ჩვეულებრივ, სწორ მდგომარეობაში.</li>
+                    </ul>
+                    
+                    <div class="code-example">
+<pre><code>.quote {
+    font-style: italic;
+    color: #555555;
+}
+
+.normal-text {
+    font-style: normal;
+}</code></pre>
+                    </div>
+                </section>
+                <section>
+                    <h3>HTML ტეგები (b, strong, i, em)</h3>
+                    <p>გარდა CSS-ისა, HTML-შიც არსებობს სპეციალური ტეგები ტექსტის გასამუქებლად და დასახრელად. დამწყებებს ხშირად ერევათ ისინი ერთმანეთში, ამიტომ მოდი ვნახოთ, რა განსხვავებაა მათ შორის:</p>
+
+                    <h4>გამუქება: <code>&lt;b&gt;</code> vs <code>&lt;strong&gt;</code></h4>
+                    <ul>
+                        <li><code>&lt;b&gt;</code> (Bold) — უბრალოდ ამუქებს ტექსტს ვიზუალურად, ყოველგვარი დამატებითი მნიშვნელობის გარეშე.</li>
+                        <li><code>&lt;strong&gt;</code> — ამუქებს ტექსტს და თან ეუბნება ბრაუზერს (და საძიებო სისტემებს), რომ ეს სიტყვა <strong>ლოგიკურად ძალიან მნიშვნელოვანია</strong>.</li>
+                    </ul>
+
+                    <h4>დახრა: <code>&lt;i&gt;</code> vs <code>&lt;em&gt;</code></h4>
+                    <ul>
+                        <li><code>&lt;i&gt;</code> (Italic) — უბრალოდ ხრის ტექსტს ვიზუალურად.</li>
+                        <li><code>&lt;em&gt;</code> (Emphasis) — ხრის ტექსტს და ხაზს უსვამს მის მნიშვნელობას (აქცენტს აკეთებს მასზე).</li>
+                    </ul>
+
+                    <div class="code-example">
+<pre><code>&lt;p&gt;ეს არის &lt;b&gt;უბრალოდ მუქი&lt;/b&gt; ტექსტი.&lt;/p&gt;
+&lt;p&gt;ეს არის &lt;strong&gt;მნიშვნელოვანი&lt;/strong&gt; გაფრთხილება!&lt;/p&gt;
+
+&lt;p&gt;ეს არის &lt;i&gt;უბრალოდ დახრილი&lt;/i&gt; ტექსტი.&lt;/p&gt;
+&lt;p&gt;მე &lt;em&gt;ნამდვილად&lt;/em&gt; მიყვარს კოდის წერა!&lt;/p&gt;</code></pre>
+                    </div>
+
+                    <p><strong>ოქროს წესი:</strong> თანამედროვე ვებ-დეველოპმენტში უმჯობესია გამოვიყენოთ <code>&lt;strong&gt;</code> და <code>&lt;em&gt;</code>. ეს ეხმარება საძიებო სისტემებს (როგორც Google) უკეთ გაიგონ შენი საიტის შინაარსი, ასევე ეხმარება ადამიანების წამკითხველ პროგრამებს (Screen Readers), რომ ტექსტი სწორი ინტონაციით წაიკითხონ.</p>
+                </section>
+
+                <section class="exercises">
+                    <h3 class="exercise-title">🎯 პრაქტიკული დავალება</h3>
+                    <p>მოდი გავაკეთოთ ლამაზი ციტატა:</p>
+                    <ol>
+                        <li>HTML-ში შექმენი პარაგრაფი <code>&lt;p&gt;</code> და შიგნით ჩაწერე რაიმე ციტატა (მაგალითად: <em>"ნუ მიეცემი ოცნებებს და ნუ დაივიწყებ რეალურ ცხოვრებას." - ალბუს დამბლდორი</em>).</li>
+                        <li>მიანიჭე ამ პარაგრაფს კლასი: <code>class="quote"</code>.</li>
+                        <li>გადადი CSS-ში და ამ კლასს დაუწერე: <code>font-style: italic;</code>.</li>
+                        <li>შეგიძლია დამატებით <code>font-weight: bold;</code> დაუწერო, რომ ციტატა უფრო თვალსაჩინო გახდეს. შეამოწმე შედეგი Live Server-ით!</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
